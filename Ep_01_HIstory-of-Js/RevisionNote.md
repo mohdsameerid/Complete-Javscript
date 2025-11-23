@@ -1,0 +1,10 @@
+- JS created in 1995 by Brendan Eich in 10 days.
+- Names: Mocha → LiveScript → JavaScript.
+- Microsoft created JScript → browser wars → need for standard.
+- ECMAScript (ES) created for standardization.
+- ES3 (1999) = stable foundation.
+- ES5 (2009) = strict mode + modern methods.
+- ES6 (2015) = biggest update (let/const, arrow fn, classes, modules).
+- JS engines: V8, SpiderMonkey, JavaScriptCore, Chakra.
+- Node.js (2009) made JS serverside.
+- JS now updates yearly and runs everywhere.
