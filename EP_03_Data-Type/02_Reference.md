@@ -1,4 +1,4 @@
-# Reference Data Types in JavaScript
+# Reference/Non Primitive Data Types in JavaScript
 
 ## WHAT
 
