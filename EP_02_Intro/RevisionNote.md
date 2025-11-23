@@ -1,0 +1,5 @@
+- JS = single-threaded, async-capable, runs everywhere.
+- Uses DOM/BOM/APIs in browser.
+- Follows ECMAScript; ES6 biggest upgrade.
+- Node.js = JS outside browser.
+- Key strengths: async, closures, prototypes.
