@@ -11,3 +11,7 @@ const user = {
         console.log("ABC");
     }
 }
+
+
+abc();            // function call
+user.a()          // function call
