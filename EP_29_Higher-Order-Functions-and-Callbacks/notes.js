@@ -1,5 +1,5 @@
 
-
+// higher order function is function either take fn or return fn 
 
 //higher order function
 function a(b) {
