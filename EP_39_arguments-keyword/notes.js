@@ -29,13 +29,13 @@ const printArguments = (...nums) => {            // do this instead.
 printArguments(2, 4, 5, 6, 4, 3, 6, 98);
 
 
-question ->
-    function printArguments() {
-        let arr = [];
-        for (let i = 0; i < arguments.length; i++) {
-            arr.push(arguments[i])
-        }
-        return arr.reduce((a, c) => a + c, 1);
+// question ->
+function printArguments() {
+    let arr = [];
+    for (let i = 0; i < arguments.length; i++) {
+        arr.push(arguments[i])
     }
+    return arr.reduce((a, c) => a + c, 1);
+}
 console.log(printArguments(2, 4, 5, 6, 4, 3, 6, 98));
 
