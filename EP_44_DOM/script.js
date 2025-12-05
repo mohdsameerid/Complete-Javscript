@@ -22,8 +22,8 @@ let index = 0;
 
 const images = [
   'https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg',
-  'https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg',
-  'https://assets.bucketlistly.blog/sites/5adf778b6eabcc00190b75b1/content_entry5adf77af6eabcc00190b75b6/6075185986d092000b192d0a/files/best-free-travel-images-main-image-hd-op.webp'
+  'https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg',
+  'https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?cs=srgb&dl=pexels-hsapir-1054655.jpg&fm=jpg'
 ];
 
 // Show first image immediately
@@ -33,4 +33,4 @@ document.getElementById("slider").src = images[index];
 setInterval(() => {
   index = (index + 1) % images.length;
   document.getElementById("slider").src = images[index];
-}, 8000);
+}, 500);
