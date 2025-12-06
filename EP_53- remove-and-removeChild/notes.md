@@ -54,3 +54,13 @@ No parent reference needed.
 5. Is remove() supported in older browsers?
 6. Which should you prefer today?
 7. Can we remove multiple elements?
+
+
+
+
+# Quick Revision — remove & removeChild
+
+* removeChild = via parent
+* remove = directly
+* remove is simpler
+* Both delete DOM element
