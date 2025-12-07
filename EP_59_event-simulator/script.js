@@ -3,7 +3,7 @@ const container = document.querySelector('.container')
 
 let count = 1
 
-
+// Event Simulation 
 // Def -> Simulating a click in JavaScript means triggering a click event on an HTML 
 //        element using code, rather than requiring manual user interaction.
 //        This technique is useful for automating actions like 
