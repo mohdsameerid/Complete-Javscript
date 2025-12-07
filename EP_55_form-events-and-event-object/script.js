@@ -22,7 +22,5 @@ userElement.addEventListener("input", (e) => {
 form.addEventListener('click', (e) => {
     e.preventDefault();
     console.log(e.type);
-
-
     console.log(value);
 })
