@@ -57,6 +57,7 @@ function breakageCall() {
     const pElementChild = document.createElement('p');
     pElementChild.classList.add('card');
     pElementChild.innerText = i;
+    pElementChild.setAttribute('key', `key-${i}`)
 
     container.append(pElementChild);
 }
