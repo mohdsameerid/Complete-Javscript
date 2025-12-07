@@ -1,3 +1,8 @@
+
+// Event Delegation:
+// Event delegation is a technique in JavaScript where you attach
+//  an event listener to a parent element instead of individual child elements.
+
 const addCardBtn = document.querySelector('.add-card')
 const container = document.querySelector('.container')
 
