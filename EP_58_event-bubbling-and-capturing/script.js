@@ -6,6 +6,17 @@ const blue = document.querySelector('.blue')
 
 const body = document.querySelector('body')
 
+// Def - Event Bubbling is When we click the event and goes from inside out and out of 
+// the event till window 'object'
+// event calling patten inside to outside , till window.
+
+// Ex:
+// <div class="green" >
+//    <div class="pink">
+//        <div class="blue"></div>
+//    </div>
+//</div >
+
 // Event Bubbling ------------------------------------------------------------->
 // blue.addEventListener('click', () => {
 //     console.log("1 - blue clicked")
@@ -32,6 +43,8 @@ const body = document.querySelector('body')
 // }, { capture: false });
 
 
+// Def - Event capturing is When we click the event and goes from outside to inside.
+// event calling patten outside to inside.
 
 // Event Capturing ---------------------------------------------------->
 // blue.addEventListener('click', () => {
