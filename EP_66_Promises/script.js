@@ -30,8 +30,28 @@ const promise = new Promise((resolve, reject) => {
     });
 });
 
-promise.then((data) => {
-    console.log(data);
-}).catch((error) => {
-    console.log(error);
-});
+// promise.then((data) => {
+//     console.log(data);
+// }).catch((error) => {
+//     console.log(error);
+// });
+
+
+//// Chaining of Promises ////
+promise
+    .then((data) => {
+        console.log(data);
+        return 'Data from first then block';
+    })
+    .then((data) => {
+        console.log(data);
+        return 'Data from second then block';
+    })
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+//  Note -> This grow as Vertically not Horizontally like CallBack hell.   
