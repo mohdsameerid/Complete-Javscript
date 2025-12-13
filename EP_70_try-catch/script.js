@@ -1,6 +1,8 @@
 
 
-// Def -> 
+// Def -> `try-catch` is a JavaScript construct used for error handling.
+// The code inside the `try` block is executed, and if an error occurs, it is caught by the `catch` block,
+// allowing you to handle the error gracefully without crashing the program.
 
 
 const user = {
