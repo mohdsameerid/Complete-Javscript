@@ -83,6 +83,8 @@ const newUser2 = newCreateUser("Anurag", "Singh", 25);
 
 
 // So the address of getAge method will be different for both objects.
+// because they are created separately in memory for each object.
+// This is not memory efficient.
 console.log(newUser1.getAge === newUser2.getAge); // false
 
 
@@ -96,3 +98,33 @@ const arr2 = [4, 5, 6];
 arr1.pop === arr2.pop; // true
 // Here, both arr1 and arr2 share the same pop method from Array.prototype.
 
+
+
+// Definition of OOP concepts:
+
+// Encapsulation : Binding data and method together in a single unit (object).
+// Example: 
+const person = {
+  name: 'John',
+  age: 30,
+  getDetails() {
+    return `${this.name} is ${this.age} years old.`;
+  }
+}
+
+
+
+// Abstraction: Hiding complex implementation details and showing only the necessary parts.
+// Example: 
+function Car(brand, model) {
+  this.brand = brand;
+  this.model = model;
+  this.startEngine = function () {
+    // Complex logic to start the engine
+    console.log('Engine started');
+  }
+}
+
+const myCar = new Car('Toyota', 'Corolla');
+myCar.startEngine(); // User doesn't need to know the complex logic inside startEngine
+// here, user just calls startEngine without knowing the complex logic inside it.
