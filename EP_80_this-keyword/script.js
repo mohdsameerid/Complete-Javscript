@@ -38,4 +38,3 @@ body.addEventListener('click', (e) => {
     console.log(e.currentTarget);   //  whole body content and there Element
     console.log(this);              // window
 })
-
