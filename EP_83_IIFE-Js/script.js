@@ -1,6 +1,8 @@
 
 // Def -> Immediately Invoked Function Expression (IIFE)
 
+const { useEffect } = require("react");
+
 
 // Different Way to create a IIFE ------>
 
@@ -60,3 +62,65 @@ true && (() => {
 const a = (function () {
     console.log("IIFE- 14");
 })();
+
+
+
+// real life working  ->
+
+// const h1Element = document.querySelector('h1');
+// const pElement = document.querySelector('p');
+// const someElement = document.querySelector('.some');
+// const btnElement = document.querySelector('.btn');
+// const eElement = document.querySelector('.e');
+// const abhElement = document.querySelector('.abh');
+// const aElement = document.querySelector('a');
+// const spanElement = document.querySelector('span');
+
+// h1Element.style.backgroundColor = "pink"
+// h1Element.style.textDecorationStyle = 'underline'
+// h1Element.style.fontStyle = "40px"
+// pElement.style.fontStyle = "30px"
+// pElement.style.color = "red"
+
+
+
+// So, we added all the element in varible in window and this is bad approach.  
+
+
+// so we do this instead 
+
+
+// (function () {
+//     const h1Element = document.querySelector('h1');
+//     const pElement = document.querySelector('p');
+//     const someElement = document.querySelector('.some');
+//     const btnElement = document.querySelector('.btn');
+//     const eElement = document.querySelector('.e');
+//     const abhElement = document.querySelector('.abh');
+//     const aElement = document.querySelector('a');
+//     const spanElement = document.querySelector('span');
+
+//     h1Element.style.backgroundColor = "pink"
+//     h1Element.style.textDecorationStyle = 'underline'
+//     h1Element.style.fontStyle = "40px"
+//     pElement.style.fontStyle = "30px"
+//     pElement.style.color = "red"
+// })();
+
+
+
+
+
+
+
+// and In React we use this also ---->  
+
+
+useEffect(() => {
+    (async function () {
+        const data = await fetch('https://dummyjson.com/products');
+        const res = await data.json();
+        console.log(res);
+    }())
+}, [])
+
